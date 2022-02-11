@@ -1,0 +1,338 @@
+
+/* CSS Variables */
+
+:root {
+    /* primary colors */
+    --main-yellow: #EFA83C;
+    --main-orange: #DC5D41;
+    --main-halfWhite: #F8F8F8;
+    /* Secondary Colors */
+    --main-bg1: #DAF3ED;
+    --main-b2: #E2F0DF;
+    --main-bg-cream: #FFEDCD;
+    --main-bg-pink: #F9D9DA;
+    /* text Colors */
+    --main-tex-green: #006950;
+    --main-text-dark: #333333;
+    --main-text-red: #6D0003;
+    --main-text-brown: #7C5000;
+    --main-text-darkGreen: #105B00;
+    /* font */
+    --main-font: 'Ubuntu', sans-serif;
+  }
+
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--main-text-dark);
+}
+
+main {
+    margin-top: 100px;
+}
+/* Navbar */
+nav {
+	position: fixed;
+	z-index: 10;
+	left: 0;
+	right: 0;
+	top: 0;
+	padding: 0 5%;
+	height: 100px;
+	background-color: #fff;
+    font-family: var(--main-font);
+    font-size: 20px;
+}
+nav .logo {
+	float: left;
+	width: 40%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 24px;
+}
+nav .links {
+	float: right;
+	padding: 0;
+	margin: 0;
+	width: 45%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+nav .links li {
+	list-style: none;
+}
+nav .links a {
+	display: block;
+	padding: 1em;
+	font-size: 16px;
+	font-weight: bold;
+	color: var(--main-text-dark);
+	text-decoration: none;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+}
+#nav-toggle {
+	position: absolute;
+	top: -100px;
+}
+nav .icon-burger {
+	display: none;
+	position: absolute;
+	right: 5%;
+	top: 50%;
+	transform: translateY(-50%);
+}
+nav .icon-burger .line {
+	width: 30px;
+	height: 5px;
+	background-color: var(--main-text-dark);
+	margin: 5px;
+	border-radius: 3px;
+	transition: all .3s ease-in-out;
+}
+
+/* Navbar mobile style */
+@media screen and (max-width: 768px) {
+	nav .logo {
+		float: left;
+		width: auto;
+		justify-content: center;
+	}
+	nav .links {
+		float: none;
+		position: fixed;
+		z-index: 9;
+		left: 0;
+		right: 0;
+		top: 90px;
+		bottom: 100%;
+		width: auto;
+		height: auto;
+		flex-direction: column;
+		justify-content: start;
+		overflow: hidden;
+		box-sizing: border-box;
+		transition: all .5s ease-in-out;
+	}
+   
+	nav .links a {
+		font-size: 20px;
+	}
+	nav :checked ~ .links {
+		bottom: 0;
+	}
+	nav .icon-burger {
+		display: block;
+	}
+	nav :checked ~ .icon-burger .line:nth-child(1) {
+		transform: translateY(10px) rotate(225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(3) {
+		transform: translateY(-10px) rotate(-225deg);
+	}
+	nav :checked ~ .icon-burger .line:nth-child(2) {
+		opacity: 0;
+	}
+	
+}
+
+/* Home page search box */
+
+.search_box_container {
+    max-width: 60%;
+    margin: auto;
+    margin-top: 150px;
+    border: 1px solid var(--main-text-dark);
+    border-radius: 15px;
+    height: 69px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 45px;
+}
+
+.search_box_container > input {
+    outline: none;
+    font-family: var(--main-font);
+    border: none;
+}
+
+.search_btn {
+    background-color: transparent;
+    border: 0;
+}
+
+.search_btn > i {
+    font-size: 25px;
+    color: var(--main-text-dark)
+}
+
+/* Slider */
+
+.slider__wrapper {
+    overflow: hidden;
+    margin-top: 95px;
+  }
+
+  .slider__item {
+    flex: 0 0 25%;
+    height: 448px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--main-text-dark);
+    border-radius: 20px;
+  }
+
+  /* .slider__item:nth-child(1) {
+    background-color: #f44336;
+  }
+
+  .slider__item:nth-child(2) {
+    background-color: #9c27b0;
+  }
+
+  .slider__item:nth-child(3) {
+    background-color: #3f51b5;
+  }
+
+  .slider__item:nth-child(4) {
+    background-color: #03a9f4;
+  }
+
+  .slider__item:nth-child(5) {
+    background-color: #4caf50;
+  } */
+
+/* My styles End */
+
+/*!
+* chiefSlider
+*   site: https://itchief.ru/javascript/slider
+*   github: https://github.com/itchief/ui-components
+*
+* Copyright 2018-2021 Alexander Maltsev
+* Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
+*/
+
+.slider {
+position: relative;
+width: 75%;
+margin: auto;
+}
+
+.slider__container {
+overflow: hidden;
+}
+
+.slider__wrapper {
+/*overflow: hidden;*/
+}
+
+.slider__items {
+display: flex;
+transition: transform 0.5s ease;
+}
+
+.slider_disable-transition {
+transition: none;
+}
+
+.slider__item {
+flex: 0 0 100%;
+max-width: 100%;
+user-select: none;
+}
+
+/* кнопки влево и вправо */
+
+.slider__control {
+position: absolute;
+top: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 40px;
+color: #fff;
+text-align: center;
+height: 50px;
+transform: translateY(-50%);
+background: rgba(0, 0, 0, 0.2);
+}
+
+.slider__control_hide {
+display: none;
+}
+
+.slider__control[data-slide='prev'] {
+left: 0;
+}
+
+.slider__control[data-slide='next'] {
+right: 0;
+}
+
+.slider__control:hover,
+.slider__control:focus {
+color: #fff;
+text-decoration: none;
+outline: 0;
+background: rgba(0, 0, 0, 0.3);
+}
+
+.slider__control::before {
+content: '';
+display: inline-block;
+width: 20px;
+height: 20px;
+background: transparent no-repeat center center;
+background-size: 100% 100%;
+}
+
+.slider__control[data-slide='prev']::before {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+}
+
+.slider__control[data-slide='next']::before {
+background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+}
+
+/* индикаторы */
+
+.slider__indicators {
+position: absolute;
+right: 0;
+bottom: 0;
+left: 0;
+z-index: 15;
+display: flex;
+justify-content: center;
+padding-left: 0;
+margin-right: 15%;
+margin-left: 15%;
+list-style: none;
+margin-top: 0;
+margin-bottom: 0;
+}
+
+.slider__indicators li {
+box-sizing: content-box;
+flex: 0 1 auto;
+width: 30px;
+height: 5px;
+margin-right: 3px;
+margin-left: 3px;
+text-indent: -999px;
+cursor: pointer;
+background-color: rgba(255, 255, 255, 0.5);
+background-clip: padding-box;
+border-top: 15px solid transparent;
+border-bottom: 15px solid transparent;
+}
+
+.slider__indicators li.active {
+background-color: rgba(255, 255, 255, 0.9);
+}
