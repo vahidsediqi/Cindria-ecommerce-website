@@ -6,12 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
       });
   });
   
-  /**
-   * ChiefSlider by Itchief v2.0.0 (https://github.com/itchief/ui-components/tree/master/simple-adaptive-slider)
-   * Copyright 2020 - 2021 Alexander Maltsev
-   * Licensed under MIT (https://github.com/itchief/ui-components/blob/master/LICENSE)
-   */
-  
   (function() {
     if (typeof window.CustomEvent === 'function') return false;
     function CustomEvent(event, params) {
@@ -51,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var CLASS_INDICATOR_ACTIVE = 'active';
   
   function ChiefSlider(selector, config) {
-    // элементы слайдера
+
     var $root = typeof selector === 'string' ?
       document.querySelector(selector) : selector;
     this._$root = $root;
@@ -61,30 +55,30 @@ document.addEventListener('DOMContentLoaded', function() {
     this._$controlPrev = $root.querySelector(SELECTOR_PREV);
     this._$controlNext = $root.querySelector(SELECTOR_NEXT);
     this._$indicatorList = $root.querySelectorAll(SELECTOR_INDICATOR);
-    // экстремальные значения слайдов
+
     this._minOrder = 0;
     this._maxOrder = 0;
     this._$itemWithMinOrder = null;
     this._$itemWithMaxOrder = null;
     this._minTranslate = 0;
     this._maxTranslate = 0;
-    // направление смены слайдов (по умолчанию)
+
     this._direction = 'next';
     // determines whether the position of item needs to be determined
     this._balancingItemsFlag = false;
     this._activeItems = [];
-    // текущее значение трансформации
+
     this._transform = 0;
-    // swipe параметры
+
     this._hasSwipeState = false;
     this.__swipeStartPos = 0;
     // slider properties
-    this._transform = 0; // текущее значение трансформации
+    this._transform = 0;
     this._intervalId = null;
     // configuration of the slider
     this._config = {
       loop: true,
-      autoplay: false,
+      autoplay: true,
       interval: 5000,
       refresh: true,
       swipe: true,
@@ -114,7 +108,6 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     }
     if (this._config.loop) {
-      // перемещаем последний слайд перед первым
       var count = $itemList.length - 1;
       var translate = -$itemList.length * 100;
       $itemList[count].dataset.order = -1;
@@ -132,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function() {
     this._autoplay();
   }
   
-  // подключения обработчиков событий для слайдера
   ChiefSlider.prototype._addEventListener = function() {
     var $root = this._$root;
     var $items = this._$items;
@@ -228,7 +220,6 @@ document.addEventListener('DOMContentLoaded', function() {
       document.addEventListener('mouseup', onSwipeEnd.bind(this));
     }
     $root.addEventListener('dragstart', onDragStart.bind(this));
-    // при изменении активности вкладки
     document.addEventListener('visibilitychange', onVisibilityChange.bind(this));
   };
   
@@ -444,11 +435,11 @@ document.addEventListener('DOMContentLoaded', function() {
           }.bind(this),
           this._config.interval
       );
-    }
+    }slider__control
   };
   
   // _refresh
-  ChiefSlider.prototype._refresh = function() {
+  ChiefSlider.prototype._refresh = function() {slider__control
     // create some constants
     var $itemList = this._$itemList;
     var widthItem = $itemList[0].offsetWidth;
@@ -515,15 +506,3 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   
   // public
-  ChiefSlider.prototype.next = function() {
-    this._moveToNext();
-  };
-  ChiefSlider.prototype.prev = function() {
-    this._moveToPrev();
-  };
-  ChiefSlider.prototype.moveTo = function(index) {
-    this._moveTo(index);
-  };
-  ChiefSlider.prototype.refresh = function() {
-    this._refresh();
-  };
