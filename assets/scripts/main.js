@@ -506,3 +506,8 @@ document.addEventListener('DOMContentLoaded', function() {
   };
   
   // public
+
+
+  const pagetitle = document.querySelector('.main-title__primary');
+
+  pagetitle.innerHTML = pagetitle.replace('<span>', '')
