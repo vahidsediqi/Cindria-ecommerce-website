@@ -440,9 +440,9 @@ background-color: rgba(255, 255, 255, 0.9);
   margin: auto;
 }
 
-.line {
-  height: 4px;
-  width: 150px;
+.line-black {
+  height: 3px;
+  width: 180px;
   background-color: #333;
 }
 
@@ -547,3 +547,37 @@ background-color: rgba(255, 255, 255, 0.9);
   font-size: 14px;
   font-weight: 600;
 }
+
+/* CTA */
+
+.cta-container {
+  width: 100%;
+  background-image: url('../img/ctra-bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 420px;
+  display: flex;
+  align-items:center;
+  justify-content: center;
+}
+
+
+.cta-title{
+ display: flex;
+ flex-direction: column;
+}
+.cta-title > span:nth-child(1){
+ font-size: 48px;
+ font-weight: 800;
+}
+
+.cta-title > span:nth-child(2){
+  font-size: 32px;
+  font-weight: 500;
+ }
+
+ .cta-inner h4 {
+   font-size: 24px;
+   font-weight: 400;
+   margin: 25px auto;
+ }
