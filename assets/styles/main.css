@@ -21,6 +21,13 @@
     --main-font: 'Ubuntu', sans-serif;
   }
 
+  a {
+    text-decoration: none;
+  }
+
+  ul, li {
+    list-style: none;
+  }
 
 body {
     font-family: 'Ubuntu', sans-serif;
@@ -533,10 +540,13 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .latest-entry-meta > a:nth-child(1) {
-  font-size: 16px;
-  margin-bottom: 9px;
+  margin-bottom: 9px !important;
 }
 
+.latest-entry-title {
+  font-size: 19px;
+  font-weight: 600;
+}
 .lates-entry-price {
   margin-bottom: 15px;
   font-size: 16px;
@@ -581,3 +591,35 @@ background-color: rgba(255, 255, 255, 0.9);
    font-weight: 400;
    margin: 25px auto;
  }
+
+ /* FAQs  */
+ 
+ .faqs-container {
+   max-width: 75%;
+   margin: 45px auto;
+ }
+
+ .accordion-button:focus{
+  outline: 0;
+  box-shadow: 0 0;
+  border: 0;
+  background-color: white;
+  color:#333
+ }
+
+ .accordion-button {
+   font-size: 27px;
+ }
+
+ .payment-methods-container {
+  background-color: var(--main-orange);
+}
+
+.payment-methods-container > div {
+ display: flex;
+ align-items: center;
+ justify-content: space-around;
+ max-width: 60%;
+ height: 241px;
+ margin: auto;
+}
