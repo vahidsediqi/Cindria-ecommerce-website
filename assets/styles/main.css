@@ -8,7 +8,7 @@
     --main-halfWhite: #F8F8F8;
     /* Secondary Colors */
     --main-bg1: #DAF3ED;
-    --main-b2: #E2F0DF;
+    --main-bg2: #E2F0DF;
     --main-bg-cream: #FFEDCD;
     --main-bg-pink: #F9D9DA;
     /* text Colors */
@@ -404,8 +404,9 @@ background-color: rgba(255, 255, 255, 0.9);
   color: var(--main-text-dark)
 }
 
-.featured-product-content > h3 {
+.featured-product-content > a h3 {
   font-size: 24px;
+  color: var(--main-text-dark)
 }
 
 .featured-location {
@@ -431,4 +432,62 @@ background-color: rgba(255, 255, 255, 0.9);
   height: 4px;
   width: 150px;
   background-color: #333;
+}
+
+.populer-categories-grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 3%;
+  margin-top: 65px;
+}
+
+.populer-category {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  max-width: 255px;
+}
+
+.populer-category > img {
+  margin-bottom: 25px;
+}
+.populer-categories-grid > div:nth-child(1){
+  background-color: var(--main-bg-pink)
+}
+.populer-categories-grid > div:nth-child(1) > a:nth-child(3){
+  color: var(--main-text-red);
+  margin-top: 15px;
+}
+/* ------------------------------------------------ */
+.populer-categories-grid > div:nth-child(2){
+  background-color: var(--main-bg1)
+}
+.populer-categories-grid > div:nth-child(2) > a:nth-child(3){
+  color: var(--main-tex-green);
+  margin-top: 15px;
+}
+/* ----------------------------------------------------- */
+.populer-categories-grid > div:nth-child(3){
+  background-color: var(--main-bg-cream)
+}
+.populer-categories-grid > div:nth-child(3) > a:nth-child(3){
+  color: var(--main-text-brown);
+  margin-top: 15px;
+}
+/* ----------------------------------------------------- */
+
+.populer-categories-grid > div:nth-child(4){
+  background-color: var(--main-bg2);
+}
+.populer-categories-grid > div:nth-child(4) > a:nth-child(3){
+  color: var(--main-text-darkGreen);
+  margin-top: 15px;
+}
+/* ----------------------------------------------------- */
+
+.populer-category a {
+  color: var(--main-text-dark)
 }
