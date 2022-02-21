@@ -626,7 +626,7 @@ background-color: rgba(255, 255, 255, 0.9);
 
 footer{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: 1fr 2fr 1fr 1fr;
   align-items: center;
   justify-items:center ;
   background-color: var(--dark-orange);
@@ -654,4 +654,30 @@ footer{
 .add-container > div > span:nth-child(2) {
   font-size: 16px;
   font-weight: 400;
+}
+
+.footer-contact-inner {
+  width: 210px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer-contact-inner > span {
+  margin-top: 15px;
+  font-style: 20px;
+  font-weight: 500;
+}
+
+.footer-contact-inner > a {
+  margin-top: 15px;
+  font-style: 16;
+  color: #fff
+}
+
+.footer-title-line {
+  background-color: var(--main-yellow);
+  height: 2px;
+  width: 100px;
+  margin-bottom: 20px;
 }
