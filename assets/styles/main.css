@@ -869,4 +869,13 @@ label[for=no] {
     padding: 5px;
   }
 
+  /* FOOTER */
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-top: 35px;
+    align-items: stretch;
+  }
 }
