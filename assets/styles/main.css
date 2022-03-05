@@ -637,7 +637,7 @@ background-color: rgba(255, 255, 255, 0.9);
 
 /* Products page */
 .product-page-container{
-  max-width: 85%;
+  max-width: 83%;
   display: grid;
   margin: auto;
   grid-template-columns: 1fr 4fr;
@@ -649,13 +649,16 @@ background-color: rgba(255, 255, 255, 0.9);
   border-radius: 25px;
   display: flex;
   justify-content: center;
+  margin-top: 35px;
 }
 
 .product-page-search_box_container > input {
   border: none;
 
 }
-
+.category-title {
+  margin-top: 55px;
+}
 .product-page-search_box_container > input:focus {
   border: none;
   outline: none;
@@ -670,27 +673,77 @@ background-color: rgba(255, 255, 255, 0.9);
   font-size: 22px;
 }
 
+.sidebar-categories ul li {
+  margin-top: 15px;
+}
 .sidebar-categories a {
   margin-left: 15px;
   color: var(--main-text-dark);
   margin-left: -12px;
+
 }
 
 .product-page-product-container {
+
+}
+.product-page-title-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px 55px;
+}
+.product-page-title-wrapper h3 {
+  font-size: 19px;
+  color: rgb(107, 107, 107);
+}
+
+.product-page-title-wrapper select {
+  border: 1px rgb(199, 199, 199) solid;
+  width: 250px;
+  height: 30px
+}
+
+.product-page-title-wrapper select:focus {
+  border: 1px rgb(199, 199, 199) solid;
+  width: 250px;
+  height: 30px;
+  outline: none;
+}
+
+
+.product-page-product-gird{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   align-items: center;
   justify-content: center;
   justify-items: center;
-
 }
 
-.product-page-product-container > .product-page-inner-product img {
-   width: 95%;
+.product-page-product-container  .product-page-inner-product img {
+   width: 100%;
 }
 
-.product-page-product-container > .product-page-inner-product {
+.product-page-product-container .product-page-inner-product {
   width: 80%;
+}
+
+
+.product-page-inner-product  h2 {
+  font-size: 19px;
+  text-align: center;
+}
+
+.product-page-content-wrapper {
+  margin: auto;
+  background-color: #fff;
+  padding: 35px;
+}
+
+.product-page-inner-product h3{
+  font-size: 15px;
+  text-align: center;
+  color: rgb(107, 107, 107);
+  margin-top: 20px;
 }
 /* Product wrapper */
 
