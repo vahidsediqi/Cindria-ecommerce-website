@@ -649,10 +649,10 @@ background-color: rgba(255, 255, 255, 0.9);
 
 /* Products page */
 .product-page-container{
-  max-width: 83%;
+  max-width: 90%;
   display: grid;
   margin: auto;
-  grid-template-columns: 1fr 4fr;
+  grid-template-columns: 15% 85%;
 }
 
 .product-page-sidebar {
@@ -772,7 +772,7 @@ background-color: rgba(255, 255, 255, 0.9);
 /* Shop page */
 
 .shop-page-product-image{
-  max-width: 80%;
+  max-width: 100%;
   transition: transform .5s ease;
   
 }
@@ -786,7 +786,7 @@ background-color: rgba(255, 255, 255, 0.9);
   align-items: center;
   justify-content: center;
   align-content: center;
-  padding: 45px;
+  padding: 35px;
 }
 
 .buy-btn {
