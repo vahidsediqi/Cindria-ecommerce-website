@@ -24,7 +24,13 @@
 
   a {
     text-decoration: none;
+    color: var(--main-text-dark);
+    transition: all 0.5 ease-in-out;
   }
+
+  a:hover {
+    color: var(--main-text-dark);
+    }
 
   ul, li {
     list-style: none;
@@ -37,6 +43,12 @@ body {
 
 main {
     margin-top: 100px;
+}
+
+hr {
+  width: 95px;
+  text-align: center;
+  border: 2px solid black;
 }
 /* Navbar */
 nav {
@@ -643,6 +655,9 @@ background-color: rgba(255, 255, 255, 0.9);
   grid-template-columns: 1fr 4fr;
 }
 
+.product-page-sidebar {
+  padding: 35px;
+}
 .product-page-search_box_container {
   border: 1px var(--main-text-dark) solid;
   height: 45px;
@@ -650,11 +665,19 @@ background-color: rgba(255, 255, 255, 0.9);
   display: flex;
   justify-content: center;
   margin-top: 35px;
+  width: 250px;
 }
 
+.product-page-search_box_container  input {
+  font-size: 12px;
+  padding-left: 5px;
+}
+.search_btn-product-page {
+  border: none;
+  background-color: transparent;
+}
 .product-page-search_box_container > input {
   border: none;
-
 }
 .category-title {
   margin-top: 55px;
@@ -713,7 +736,7 @@ background-color: rgba(255, 255, 255, 0.9);
 
 .product-page-product-gird{
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   align-items: center;
   justify-content: center;
   justify-items: center;
@@ -744,6 +767,55 @@ background-color: rgba(255, 255, 255, 0.9);
   text-align: center;
   color: rgb(107, 107, 107);
   margin-top: 20px;
+}
+
+/* Shop page */
+
+.shop-page-product-image{
+  max-width: 80%;
+  transition: transform .5s ease;
+  
+}
+
+.product-image-wrapper {
+  max-width: 400px;
+  margin: auto;
+  overflow: hidden;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  padding: 45px;
+}
+
+.buy-btn {
+   transform: translateY(20px);
+   opacity: 0;
+   transition: 0.3s all ease-in-out;
+   background-color: #DC5D41;
+   border: none;
+}
+
+.single-product:hover .shop-page-product-image{
+  transform: scale(1.1);
+  opacity: 0.8;
+}
+
+.single-product:hover .buy-btn{
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.product-title-shop-page {
+  font-size: 18px;
+}
+
+.product-price-shop-page {
+  font-size: 15px;
+}
+.rating-containter {
+  color: goldenrod
 }
 /* Product wrapper */
 
