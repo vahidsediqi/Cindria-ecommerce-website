@@ -829,7 +829,10 @@ background-color: rgba(255, 255, 255, 0.9);
 .rating-containter {
   color: goldenrod
 }
-/* Product wrapper */
+/* Product Details */
+.single-produt-image-product-details img {
+ width: 100%;
+}
 
 /* Site Footer */
 
