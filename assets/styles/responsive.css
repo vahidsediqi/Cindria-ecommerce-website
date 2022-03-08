@@ -91,7 +91,26 @@
     .newest-intery-container-for-mob{
       max-width: 100%;
     }
+
+    /* shop page */
+
+    .product-page-container {
+      grid-template-columns: 1fr;
+    }
+
+    .product-page-sidebar {
+      display: none;
+    }
   
+    .product-page-title-wrapper {
+      margin-top: 45px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 5px 2px;
+    }
+
     /* Payment */
   
     .payment-methods-container > div {

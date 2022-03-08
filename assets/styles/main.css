@@ -778,7 +778,13 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .pagination a {
-  color: #333
+  color: #333;
+  transition: all ease-in-out .4s;
+}
+
+.pagination a:hover {
+  background-color: var(--dark-orange);
+  color: white;
 }
 .product-image-wrapper {
   max-width: 400px;
