@@ -45,11 +45,7 @@ main {
     margin-top: 100px;
 }
 
-hr {
-  width: 95px;
-  text-align: center;
-  border: 2px solid black;
-}
+
 /* Navbar */
 #nav {
 	position: fixed;
@@ -856,6 +852,14 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 .rating-containter {
   color: goldenrod
+}
+.rating-box {
+  display: flex;
+}
+
+.rating-box > span {
+  margin-left: 15px;
+  color: rgb(170, 170, 170);
 }
 /* Product Details */
 /* .single-produt-image-product-details img {
