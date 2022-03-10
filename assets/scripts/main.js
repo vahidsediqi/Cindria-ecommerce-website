@@ -508,23 +508,16 @@ document.addEventListener('DOMContentLoaded', function() {
   // public
 
 
-  const pagetitle = document.querySelector('.main-title__primary');
 
-  pagetitle.innerHTML = pagetitle.replace('<span>', '')
 
-  // Single prodcut image slider
+// Single product Gallery slider
 
-  const activeImage = document.querySelector(".product-image .active");
-const productImages = document.querySelectorAll(".image-list img");
-const navItem = document.querySelector('a.toggle-nav');
 
-function changeImage(e) {
-  activeImage.src = e.target.src;
-}
+const mainImage = document.getElementById('single-product-main-image');
+const subImages = document.querySelectorAll('.small-image');
 
-function toggleNavigation(){
-  this.nextElementSibling.classList.toggle('active');
-}
-
-productImages.forEach(image => image.addEventListener("click", changeImage));
-navItem.addEventListener('click', toggleNavigation);
+subImages.forEach((smallimg) => {
+    smallimg.addEventListener('click', () => {
+      mainImage.src = smallimg.src
+    })
+})
