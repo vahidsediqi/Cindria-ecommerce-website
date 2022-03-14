@@ -124,6 +124,16 @@
       padding: 5px;
     }
   
+    /* single product */
+
+    .single-product-breadcrumb {
+      padding-top: 25px;
+    }
+
+    .single-product-content-wrapper {
+      padding-left: 0px;
+      padding: 25px;
+    }
     /* FOOTER */
   
     footer {
