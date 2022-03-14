@@ -111,6 +111,37 @@
       padding: 5px 2px;
     }
 
+    /* hover stoped */
+    .fave-buy-icon-box {
+      display: flex;
+      flex-direction: column;
+      position: absolute;
+      right: 0px;
+      top: 0px;
+      background-color: white;
+      padding: 5px 10px;
+      opacity: 1;
+      transition: all ease-in-out 0.3s;
+      box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+      width: 45px;
+    }
+    .buy-btn {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fave-buy-icon-box i {
+      margin-top: 15px;
+      height: 100%;
+      width:100%
+    }
+    .single-product > div {
+      cursor: pointer;
+      margin-bottom: 15px;
+      box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+      padding-bottom: 15px;
+      position: relative;
+    
+    }
     /* Payment */
   
     .payment-methods-container > div {
