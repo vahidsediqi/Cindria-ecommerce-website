@@ -1016,6 +1016,7 @@ background-color: rgba(255, 255, 255, 0.9);
   background-color: #fff;
   position: sticky;
   top: 150px;
+  border-radius: 15px;
 }
 
 .btn-phone {
@@ -1049,6 +1050,7 @@ background-color: rgba(255, 255, 255, 0.9);
   background-color: #fff;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 45px;
+  border-radius: 15px;
 }
 
 
@@ -1065,8 +1067,8 @@ background-color: rgba(255, 255, 255, 0.9);
   font-size: 18px;
   color: rgb(77, 77, 77);
   font-weight: 300;
-  border: 1px solid rgb(231, 231, 231);
-  margin: 15px;
+  background-color: rgb(245, 245, 245);
+  margin-right: 15px;
   border-radius: 15px;
 }
 
