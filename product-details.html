@@ -11,8 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!-- / -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">   
+     <!-- / -->
     <!-- local CSS  -->
     <link rel="stylesheet" href="./assets/styles/main.css">
     <link rel="stylesheet" href="./assets/styles/responsive.css">
@@ -41,7 +41,15 @@
     </label>
 </nav>
     <section class="container single-product-page-product-wrapper my-5 py-5">
-      <div class="row mt-5 d-flex justify-content-between align-items-center ">
+
+      <nav aria-label="breadcrumb" class=" single-product-breadcrumb">
+        <ol class="breadcrumb ">
+          <li class="breadcrumb-item"><a href="./products.html">Shop</a></li>
+          <li class="breadcrumb-item active" aria-current="page">Gaming Headphone</li>
+        </ol>
+      </nav>
+      <h3 class="pt-4">Gaming Headphone </h3>
+      <div class="row mt-5 d-flex justify-content-between ">
         <div class="single-produt-image-product-details col-lg-5 col-md-12 col-12">
           <img id="single-product-main-image" class="img-fluid w-100 pb-2" src="./assets/img/product/productdetails (1).jpg" alt="">
           <div class="small-image-group">
@@ -57,18 +65,21 @@
               <div class="small-image-col">
                 <img class="small-image" width="100%" src="./assets/img/product/prodactdetail4.jpg" alt="">
               </div>
+              <div class="small-image-col">
+                <img class="small-image" width="100%" src="./assets/img/product/productdetails (1).jpg" alt="">
+              </div>
+              <div class="small-image-col">
+              <img class="small-image" width="100%" src="./assets/img/product/productdetails (3).jpg" alt="">
+            </div>
+            <div class="small-image-col">
+              <img class="small-image" width="100%" src="./assets/img/product/productdetails (4).jpg" alt="">
+            </div>
           </div>
         </div>
         <!-- product details text  -->
         <div class="col-lg-6 col-md-12 col-sm-12 single-product-content-wrapper">
-          <nav aria-label="breadcrumb" class=" single-product-breadcrumb">
-            <ol class="breadcrumb ">
-              <li class="breadcrumb-item"><a href="./products.html">Shop</a></li>
-              <li class="breadcrumb-item active" aria-current="page">Gaming Headphone</li>
-            </ol>
-          </nav>
           <h3 class="pt-4">Gaming Headphone </h3>
-            <div class="rating-box pb-4">
+          <div class="rating-box pb-4">
             <div class="rating-containter">
               <i class="fa-solid fa-star"></i>
               <i class="fa-solid fa-star"></i>
@@ -78,19 +89,66 @@
               </div>
               <span>(5 customer review)</span>
             </div>
-          <h4>$15.00</h4>
-          <select class="my-3" name="" id="">
-            <option value="">Select Size</option>
-            <option value="">M</option>
-            <option value="">x</option>
-            <option value="">XX</option>
-          </select>
-          <input type="number" name="" id="" value="1">
-          <a class=" btn btn-dark my-3" href="/cart.html">Add to Cart</a>
-          <h2>Product Details</h2>
-          <p class="my-3">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora nemo molestiae dolorem temporibus nostrum ad distinctio eum! Recusandae similique veritatis hic ipsam quam aperiam. Recusandae velit voluptatem cum deserunt ipsa?
-          </p>
+          <h4>$15.00 / Day</h4>
+          <!-- Tabel -->
+          <table class="product-table table table-striped">
+            <thead>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">ürün numaras</th>
+                <td>1525265</td>
+              </tr>
+              <tr>
+                <th scope="row">Marka</th>
+                <td>JBL</td>
+              </tr>
+              <tr>
+                <th scope="row">Model</th>
+                <td>JBL 2022</td>
+              </tr>
+              <tr>
+                <th scope="row">Renk</th>
+                <td>Bayaz</td>
+              </tr>
+              <tr>
+                <th scope="row">Garanti</th>
+                <td>6 ay</td>
+              </tr>
+              <tr>
+                <th scope="row">Durumu</th>
+                <td>İkinci El </td>
+              </tr>
+            </tbody>
+          </table>
+          <!-- /end of table -->
+          <button class="btn btn-dark btn-block" data-toggle="modal" data-target="#exampleModal" >Hızlı mesaj gönder</button>
+          <!-- Popup contact form -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Satıcıya Mesaj At</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <form>
+                    <div class="form-group">
+                      <label for="message-text" class="col-form-label">Message:</label>
+                      <textarea class="single-product-msg-box form-control" id="message-text"></textarea>
+                    </div>
+                  </form>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-danger" data-dismiss="modal">Kapat</button>
+                  <button type="button" class="btn btn-dark">Gönder</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- End of popup contact from -->
         </div>          
       </div>
       <div class="row text-center ">
@@ -266,11 +324,10 @@
            </ul>
         </div>    
     </footer>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
      <script src="https://kit.fontawesome.com/05021db3ea.js" crossorigin="anonymous"></script>
      <script src="./assets/scripts/main.js"></script>
-
-
-
  </body>
  </html>
