@@ -165,6 +165,25 @@
       padding-left: 0px;
       padding: 25px;
     }
+
+    .single-product-content-wrapper {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    .product-features-card-wrapper {
+      margin-top: 15px;
+    }
+
+    .product-features-card-wrapper {
+     
+    }
+.features-wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin-top: 35px;
+  grid-row-gap: 25px;
+}
     /* FOOTER */
   
     footer {
