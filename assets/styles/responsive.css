@@ -163,7 +163,7 @@
 
     .single-product-content-wrapper {
       padding-left: 0px;
-      padding: 25px;
+      padding: 0px;
     }
 
     .single-product-content-wrapper {
@@ -175,9 +175,10 @@
       margin-top: 15px;
     }
 
-    .product-features-card-wrapper {
-     
-    }
+   .seller-card-wrapper {
+     padding: 0;
+     width: 95% !important;
+   }
 .features-wrapper {
   display: grid;
   grid-template-columns: 1fr;
