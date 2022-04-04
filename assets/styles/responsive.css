@@ -177,13 +177,54 @@
 
    .seller-card-wrapper {
      padding: 0;
-     width: 95% !important;
+     width: 100% !important;
    }
 .features-wrapper {
   display: grid;
   grid-template-columns: 1fr;
   margin-top: 35px;
   grid-row-gap: 25px;
+}
+
+
+/* Single Product */
+
+.single-product-title-wrapper > h1 {
+  font-size: 20px;
+}
+
+.hide-on-mobile {
+  display: none !important;
+}
+.single-product-title-wrapper {
+  padding: 0 25px;
+}
+
+.features-wrapper {
+  grid-template-columns: 1fr;
+ 
+}
+
+.big-image > img {
+  width: 100%;
+}
+.message-box {
+  width: 100% !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  position: fixed;
+  bottom: -450px;
+  background-color: white;
+  opacity: 0;
+  left: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.message-box-display{
+  display: block;
+  bottom: 0px;
+  opacity: 1;
 }
     /* FOOTER */
   

@@ -1051,7 +1051,7 @@ background-color: rgba(255, 255, 255, 0.9);
 .message-box {
   max-width: 350px;
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
-    border-top-left-radius: 8px;
+  border-top-left-radius: 8px;
   border-top-right-radius: 8px;
   position: fixed;
   bottom: -450px;
@@ -1127,14 +1127,18 @@ background-color: rgba(255, 255, 255, 0.9);
   margin-top: 5px;
 }
 
-.msg-status-time{
+
+.msg-status-icon-seen > i {
   font-size: 11px;
+  color: green; 
 }
 
+.msg-status-icon-seen {
+  font-size: 11px;
+}
 .msg-status-icon > i {
   font-size: 11px;
 }
-
 .close-msg {
   cursor: pointer;
 }
@@ -1177,8 +1181,6 @@ background-color: rgba(255, 255, 255, 0.9);
 .attachments-wrapper{
 padding: 15px;
 }
-
-
 
 .features-wrapper {
   display: grid;
