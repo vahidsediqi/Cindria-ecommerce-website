@@ -14,21 +14,28 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!-- / -->
     <!-- local CSS  -->
+    <link rel="stylesheet" href="./assets/styles/login.css">
     <link rel="stylesheet" href="./assets/styles/main.css">
+    <link rel="stylesheet" href="./assets/styles/responsive.css">
+
     <!-- Normalizing CSS -->
      
 </head>
 <body>
-    <nav>
+    <nav id="nav">
         <input id="nav-toggle" type="checkbox">
         <div class="logo"><img src="./assets/img/logo-dark.png" alt=""> </div>
         <ul class="links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#work">Work</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="/">Home</a></li>
+          <li><a href="/products.html">Shop</a></li>
+          <li><a href="#work">About</a></li>
+          <li><a href="#projects">Latest</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
+        <!-- <div class="icon-holder">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+          <a href=""><i class="fa-solid fa-user"></i></a>
+        </div> -->
         <label for="nav-toggle" class="icon-burger">
             <div class="line"></div>
             <div class="line"></div>
@@ -36,20 +43,110 @@
         </label>
     </nav>
       
-    <main class="text-center">
-        <img class="" width="180" src="/assets/img/colored-logo.png" alt="logo">
-      <div class="login-wrapper">
-        <div class="toggle-radio">
-            <input type="radio" name="rdo" id="yes" checked>
-            <input type="radio" name="rdo" id="no">
-            <div class="switch">
-              <label for="yes">Login</label>
-              <label for="no">Register</label>
-              <span></span>
+        <div class="container login-container">
+            <div class="row">
+                <div class="col-md-6 mx-auto p-0">
+                    <div class="card">
+                        <div class="login-box">
+                            <div class="login-snip">
+                                 <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1" class="tab">Login</label> 
+                                 <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2" class="tab">Sign Up</label>
+                                <div class="login-space">
+                                    <div class="login">
+                                        <div class="group"> <input id="user" type="text" class="input" placeholder="Enter your username"> </div>
+                                        <div class="group"> <input id="pass" type="password" class="input" data-type="password" placeholder="Enter your password"> </div>
+                                        <div class="group"> <input id="check" type="checkbox" class="check" checked> <label for="check"><span class="icon"></span> Keep me Signed in</label> </div>
+                                        <div class="group"> <input type="submit" class="button" value="Sign In"> </div>
+                                        <div class="hr"></div>
+                                        <div class="foot"> <a href="#">Forgot Password?</a> </div>
+                                    </div>
+                                    <div class="sign-up-form">
+                                        <div class="group"> <input id="user" type="text" class="input" placeholder="Create your Username"> </div>
+                                        <div class="group"><input id="pass" type="password" class="input" data-type="password" placeholder="Create your password"> </div>
+                                        <div class="group"> <input id="pass" type="password" class="input" data-type="password" placeholder="Repeat your password"> </div>
+                                        <div class="group">  <input id="pass" type="text" class="input" placeholder="Enter your email address"> </div>
+                                        <div class="group"> <input type="submit" class="button" value="Sign Up"> </div>
+                                        <div class="hr"></div>
+                                        <div class="foot"> <label for="tab-1">Already Member?</label> </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+        </div>
 
-    </main>
-
+        <footer>
+            <div class="footer-col add-container">
+              <img src="/assets/img/log-light.png" alt="logo">
+                  <div>
+                    <span>Address</span>
+                    <span>
+                      Pyrkergasse 30-32 <br>
+                      1190 Wien
+                   </span>
+                 </div>
+               
+                <!-- / -->
+              
+                 <div>
+                   <span>Office Hour</span>
+                   <span>
+                     Monday - Sunday
+                     <br>
+                     10.00 - 18.00
+                  </span>
+                </div>
+            </div>
+            <!-- col 2 -->
+            <div class="footer-col">
+              <h4>Get in touch</h4>
+              <div class="footer-title-line"></div>
+                  <div class="footer-contact-inner">
+                    <span>Phone</span>
+                    <a href="tel:">+90 531 69 31</a>
+                  </div>
+                </li>
+                <li>
+                 <div class="footer-contact-inner">
+                   <span>Customer  <br>
+                     Service</span>
+                   <a href="tel:">+90 531 69 31</a>
+                 </div>
+              
+                 <div class="footer-contact-inner">
+                   <span>Service <br> Center</span>
+                   <a href="tel:">+90 531 69 31</a>
+                 </div>
+            </div>
+            <div class="footer-col footer-nav-wrapper">
+             <h4>Get in touch</h4>
+             <div class="footer-title-line"></div>
+               <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Shop</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Help</a></li>
+                 <li><a href="#">FAQs</a></li>
+               </ul>
+            </div>
+            <div class="footer-col footer-nav-wrapper">
+             <h4>Get in touch</h4>
+             <div class="footer-title-line"></div>
+               <ul>
+                 <li><a href="#">Home</a></li>
+                 <li><a href="#">Shop</a></li>
+                 <li><a href="#">About Us</a></li>
+                 <li><a href="#">Help</a></li>
+                 <li><a href="#">FAQs</a></li>
+               </ul>
+            </div>    
+        </footer>
+     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+     <script src="https://kit.fontawesome.com/05021db3ea.js" crossorigin="anonymous"></script>
+     <script src="./assets/scripts/main.js"></script>
 </body>
 </html>
