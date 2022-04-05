@@ -29,7 +29,7 @@
     width: 100%;
     margin: auto;
     max-width: 525px;
-    min-height: 570px;
+    min-height: 670px;
     position: relative;
     border-radius: 15px;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -240,55 +240,5 @@ a {
         border: 0;
     }
 
-    .login-space .group label .icon:before {
-        left: 3px;
-        width: 5px;
-        bottom: 6px;
-        transform: scale(0) rotate(0)
-    }
-    
-    .login-space .group label .icon:after {
-        top: 6px;
-        right: 0;
-        transform: scale(0) rotate(0)
-    }
-    
-    .login-space .group .check:checked+label {
-        color: #333
-    }
-    
-    .login-space .group .check:checked+label .icon {
-        background: #D84727
-    }
-    
-    .login-space .group .check:checked+label .icon:before {
-        transform: scale(1) rotate(45deg)
-    }
-    
-    .login-space .group .check:checked+label .icon:after {
-        transform: scale(1) rotate(-45deg)
-    }
-    
-    .login-snip .sign-in:checked+.tab+.sign-up+.tab+.login-space .login {
-        transform: rotate(0)
-    }
-    
-    .login-snip .sign-up:checked+.tab+.login-space .sign-up-form {
-        transform: rotate(0)
-    }
-    
-    *,
-    :after,
-    :before {
-        box-sizing: border-box
-    }
-    .sign-up-form {
-        background-color: white;
-    }
-    .clearfix:after,
-    .clearfix:before {
-        content: '';
-        display: table
-    }
     
   }
