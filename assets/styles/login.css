@@ -233,3 +233,10 @@ a {
     color: #b3b3b3
 }
 
+@media screen and (max-width: 992px) {
+    .card {
+        width: 100% !important;
+        left: 0px;
+        border: 0;
+    }
+  }
