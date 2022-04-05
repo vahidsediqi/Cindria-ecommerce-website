@@ -23,6 +23,7 @@
 .login-container {
     margin-top: 150px;
     margin-bottom: 150px;
+    background-color: white;
 }
 .login-box {
     width: 100%;
@@ -193,7 +194,9 @@ input:focus {
 :before {
     box-sizing: border-box
 }
-
+.sign-up-form {
+    background-color: white;
+}
 .clearfix:after,
 .clearfix:before {
     content: '';
