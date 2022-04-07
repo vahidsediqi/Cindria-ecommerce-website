@@ -266,6 +266,7 @@ nav .icon-burger .line {
       align-items: center;
       justify-content: center;
       border-radius: 5px;
+
   }
 
 .slider {
@@ -1214,6 +1215,185 @@ background-color: rgba(255, 255, 255, 0.9);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   padding: 45px;
   border-radius: 15px;
+}
+
+/* LOGIN */
+
+.login-outer-wrapper {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.login-form-container {
+  position: relative;
+  max-width: 450px;
+  width: 100%;
+  background-color: white;
+  margin: auto;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  border-radius: 10px;
+  overflow: hidden;
+
+}
+
+.login-form-container .form {
+  padding: 30px;
+  width: 50%;
+  background-color: white;
+  transition: margin-left 0.18s ease;
+}
+
+
+
+.login-form-container .forms {
+  display: flex;
+  width: 200%;
+  align-items: center;
+  height: 440px;
+  transition: height 0.2s ease;
+} 
+
+.login-form-container.active-login .login-form {
+   margin-left: -50%;
+   opacity: 0;
+   transition: margin-left 0.18s ease, opacity 0.15s ease;
+
+}
+
+
+.login-form-container .signup-form {
+  opacity: 0;
+  transition: opacity 0.09s ease;
+}
+.login-form-container.active-login .signup-form {
+ opacity: 1;
+ transition: opacity 0.2s ease;
+}
+
+
+
+.login-form-container.active-login .forms {
+   height: 600px
+}
+
+
+.login-form-container  .login-title {
+ position: relative;
+ font-size: 27px;
+ font-weight: 600;
+ overflow: hidden;
+}
+
+.login-title::before{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  background-color: #D84727;
+  border-radius: 25px;
+}
+
+.form .input-field{
+  margin-top: 30px;
+  position: relative;
+  height: 50px;
+  width: 100%;
+}
+
+.input-field input {
+  position:absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 45px;
+  border: none;
+  outline: none;
+  border: 2px solid #ccc;
+  font-size: 16px;
+  border-radius: 25px;
+  transition: ease-in-out all 0.3s;
+}
+
+.input-field input:is(:focus, :valid) {
+  border-color: var(--dark-orange);
+}
+
+.input-field i {
+  position: absolute;
+  top: 10%;
+  color: #999;
+  font-size: 26px;
+}
+
+.input-field input:is(:focus, :valid) ~ i{
+  color: var(--dark-orange);
+}
+
+.input-field i.login-icon {
+  left: 15px;
+}
+.input-field i.showHidePw {
+  right: 15px;
+  cursor: pointer;
+}
+
+.form .checkbox-text {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.checkbox-content input {
+  accent-color: var(--dark-orange);
+  margin: 0 8px -2px 4px;
+}
+
+.form a {
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.form a:hover {
+  color: var(--dark-orange)
+}
+
+.form .check-text {
+  color: #333;
+  font-size: 14px;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button input {
+  border: none;
+  background-color: var(--main-orange);
+  color: white;
+  letter-spacing: 1px;
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.form .button input:hover{
+  background-color: var(--main-text-dark);
+
+}
+
+.form .login-signup {
+  margin-top: 25px;
+  text-align: center;
 }
 
 /* footer */
