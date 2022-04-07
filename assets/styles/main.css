@@ -256,7 +256,7 @@ nav .icon-burger .line {
   .primary_btn {
       border: none;
       background-color: var(--main-yellow);
-      color: #fff;
+      color: #fff ;
       font-family: var(--main-font);
       font-size: 18;
       font-weight: bold;
@@ -269,6 +269,19 @@ nav .icon-burger .line {
 
   }
 
+  .register-menu-btn{
+    color: var(--main-text-dark) !important;
+    border: 2px solid var(--main-text-dark);
+    padding: 5px 12px;
+    border-radius: 8px;
+    transition: ease-in-out 0.19s all;
+  }
+
+  .register-menu-btn:hover{
+    color: white !important;
+    background-color: var(--dark-orange);
+    border: 2px solid var(--dark-orange);
+  }
 .slider {
 position: relative;
 width: 80%;
@@ -1291,9 +1304,9 @@ background-color: rgba(255, 255, 255, 0.9);
   content: '';
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: -5px;
   height: 3px;
-  width: 30px;
+  width: 45px;
   background-color: #D84727;
   border-radius: 25px;
 }
@@ -1319,7 +1332,7 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .input-field input:is(:focus, :valid) {
-  border-color: var(--dark-orange);
+  border-color: var(--main-orange);
 }
 
 .input-field i {
@@ -1330,7 +1343,8 @@ background-color: rgba(255, 255, 255, 0.9);
 }
 
 .input-field input:is(:focus, :valid) ~ i{
-  color: var(--dark-orange);
+  color: var(--main-orange);
+
 }
 
 .input-field i.login-icon {
