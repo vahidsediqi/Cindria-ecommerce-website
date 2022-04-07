@@ -235,11 +235,14 @@
       padding-top: 35px;
       align-items: stretch;
     }
+
+
+    .login-outer-wrapper {
+      height: auto;
+      padding-top:100px;
+      padding-bottom: 55px;
+    }
   }
 
   /* login page */
 
-  /* 
-   Style for login page mobile design is inside login.css
-  
-  */
