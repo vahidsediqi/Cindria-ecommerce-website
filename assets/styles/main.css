@@ -271,16 +271,17 @@ nav .icon-burger .line {
 
   .register-menu-btn{
     color: var(--main-text-dark) !important;
-    border: 2px solid var(--main-text-dark);
+    border: 1px solid var(--main-text-dark);
     padding: 5px 12px;
-    border-radius: 8px;
+    border-radius:15px;
     transition: ease-in-out 0.19s all;
+    font-size: 14px;
   }
 
   .register-menu-btn:hover{
     color: white !important;
     background-color: var(--dark-orange);
-    border: 2px solid var(--dark-orange);
+    border: 1px solid var(--dark-orange);
   }
 .slider {
 position: relative;
