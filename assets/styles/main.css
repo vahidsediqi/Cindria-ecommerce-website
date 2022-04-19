@@ -40,6 +40,8 @@
 body {
     font-family: 'Ubuntu', sans-serif;
     color: var(--main-text-dark);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 main {
@@ -71,12 +73,7 @@ main {
     justify-content: space-around;
 }
 
-hr {
-  margin-top: 0.3rem !important;
-  margin-bottom: 0.3rem !important;
-  border-top: 1px solid black!important;
-  width: 100% !important;
-}
+
 .icon-holder {
   margin-right: 22px;
 }
@@ -180,6 +177,12 @@ nav .icon-burger .line {
 		opacity: 0;
 	}
 	
+}
+hr {
+  margin-top: 0.3rem !important;
+  margin-bottom: 0.3rem !important;
+  border-top: 1px solid black!important;
+  width: 100% !important;
 }
 
 /* Home page search box */
