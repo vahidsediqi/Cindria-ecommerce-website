@@ -289,10 +289,7 @@ hr{
     background-color: var(--dark-orange);
     color: white;
 }
-.chat-bubble--right{
-    background-color: var(--main-tex-green);
-    color: white;
-}
+
 .chat-bubble:after {
     content: '';
     position: absolute;
@@ -310,9 +307,15 @@ hr{
     border-left: 0;
     margin-left: -20px;
 }
+
+.chat-bubble--right{
+    background-color: #fff;
+    color: var(--main-text-dark);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 .chat-bubble--right::after{
     right: 0;
-    border-left-color: #006950;
+    border-left-color: #fff;
     border-right: 0;
     margin-right: -20px;
 }
