@@ -360,7 +360,7 @@ hr{
     padding: 0 25px;
     width: 10px;
     position: absolute;
-    width: 240px;
+    width: 280px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -368,13 +368,16 @@ hr{
     bottom: 55px;
     border: 1px solid #eee;
     display: none;
+    transform: translateY(25px);
+    transition: all ease-in-out 05s;
 }
 .show-imojis{
     display: block;
+    transform: translateY(-25px);
 }
 .imojis a {
     padding: 5px;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 footer{

@@ -184,7 +184,7 @@
                 <div class="row type-msg">
                     <div class="col-12">
                        <div class="chat-box-tray">
-                        <i class="uil uil-smile"></i>
+                        <i class="uil uil-smile imoji-btn"></i>
                          <input type="text" name="" id="" placeholder="Type your message here...">
                         <i class="uil uil-microphone"></i>
                         <i class="uil uil-message"></i>
@@ -271,7 +271,11 @@
         </div>    
        </footer>
 
-
+<script>
+  const imojibtn = document.querySelector('.imoji-btn').addEventListener('click', ()=> {
+      document.querySelector('.imojis').classList.toggle('show-imojis')
+  })
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
