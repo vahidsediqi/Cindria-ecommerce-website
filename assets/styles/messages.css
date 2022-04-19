@@ -335,7 +335,8 @@ hr{
 
 .chat-box-tray i {
     font-size: 25px;
-    color: gray
+    color: gray;
+    margin-left: 10px;
 }
 
 .chat-box-tray input {
