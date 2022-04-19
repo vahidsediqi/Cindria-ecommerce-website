@@ -339,6 +339,11 @@ hr{
     font-size: 25px;
     color: gray;
     margin-left: 10px;
+    cursor: pointer;
+    transition: .3s;
+}
+.chat-box-tray i:hover {
+  color: var(--dark-orange)
 }
 
 .chat-box-tray input {
