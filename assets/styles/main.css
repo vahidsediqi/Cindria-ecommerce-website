@@ -1447,6 +1447,13 @@ footer{
   font-weight: 400;
 }
 
+/* Favorite page */
+
+.favorite-page-container{
+  max-width: 90%;
+  display: grid;
+  margin: auto;
+}
 .footer-contact-inner {
   width: 210px;
   display: flex;
