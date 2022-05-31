@@ -1516,10 +1516,9 @@ footer{
 
 .title-star {
   display: flex;
-  /* align-items: center; */
+  align-items: center;
   justify-content: space-between;
   width: 100%;
-  margin: auto;
 }
 
 .title-star h4 {
@@ -1541,8 +1540,8 @@ footer{
   border-radius: 15px;
 }
 
-.product-inner-content-wrapper {
-  margin-top: 15px;
+.product-inner-content-wrapper p {
+  margin-top: -5px;
 }
 
 .pricing-panel {
