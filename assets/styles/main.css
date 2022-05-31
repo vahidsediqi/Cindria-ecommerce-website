@@ -1497,7 +1497,7 @@ footer{
 /* new design */
 .product-wrapper{
   width: 85%;
-  margin: auto;
+  margin: 120px auto 85px auto;
 }
 
 .new-product-design-grid {
