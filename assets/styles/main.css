@@ -143,6 +143,11 @@ nav .icon-burger .line {
 		width: auto;
 		justify-content: center;
 	}
+
+  nav .logo img {
+    width: 150px;
+    text-align: left;
+  }
 	nav .links {
 		float: none;
 		position: fixed;
@@ -329,7 +334,7 @@ background-size: cover;
 border-radius: 25px; */
 }
 
-/* кнопки влево и вправо */
+
 
 .slider__control {
 position: absolute;
@@ -382,7 +387,7 @@ background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.
 background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
 }
 
-/* индикаторы */
+
 
 .slider__indicators {
 position: absolute;
@@ -422,6 +427,26 @@ background-color: rgba(255, 255, 255, 0.9);
 .white-space {
   height: 35px;
 }
+
+/* ABOUT PAGE */
+
+.about-page-banner{
+  margin-top: 110px;
+  background-color: rgb(238, 238, 238);
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.about-page-banner .breadcrumb{
+  background-color: transparent;
+
+}
+
+ 
 
 /* Featured products */
 
@@ -861,6 +886,67 @@ background-color: rgba(255, 255, 255, 0.9);
    border: none;
 }
 
+/* Contact page starts */
+
+.contact-wrapper {
+  padding: 45px;
+  border-radius: 15px;
+  box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.contact-wrapper input{
+  height: 52px;
+  border-radius: 25px;
+  padding-left: 15px;
+  outline: 0;
+}
+
+.contact-btn {
+  background-color: #D84727;
+  color: white;
+  width: 150px;
+  border-radius: 25px;
+
+}
+
+.contact-input {
+  width: 100%;
+  border: 1px solid #999;
+}
+
+.contact-wrapper input:focus{
+  outline: 2px solid #D84727;
+  border: 0;
+ }
+ .contact-wrapper textarea{
+   height: 52px;
+   border-radius: 25px;
+   padding-left: 15px;
+ }
+ .contact-wrapper textarea:focus{
+  outline: 2px solid #D84727;
+  border: 0;
+ }
+
+ .contact-info ul li a span {
+  background-color: #D84727;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  margin-right: 15px;
+ }
+ .contact-info ul li {
+  margin-bottom: 35px;
+ }
+ .contact-info ul{
+  margin-top: 35px;
+ }
+ .contact-info{
+  margin-top: 35px;
+ }
+ .about-left > div{
+  max-width: 90% !important;
+ }
+/* contact page ends */
 /* shop heart box */
 
 .fave-buy-icon-box {
