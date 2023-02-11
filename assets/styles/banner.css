@@ -1,0 +1,42 @@
+.banner-wrapper{
+    background-image: url('../img/bannerr.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    max-width: 85%;
+    margin: auto;
+    border-radius: 25px;
+    padding: 55px;
+    margin-top: 35px;
+    height: 450px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.banner-wrapper a {
+  background-color: #EFA83C;
+  max-width: 150px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  border-radius: 20px;
+}
+
+.banner-wrapper h1 {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.banner-wrapper p {
+    font-size: 22px;
+}
+
+@media only screen and (max-width: 900px) {
+    .banner-wrapper {
+        max-width: 90%;
+        padding: 25px;
+    }
+  }

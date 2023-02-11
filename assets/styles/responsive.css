@@ -1,6 +1,10 @@
 /* MOBILE */
 
 @media screen and (max-width: 992px) {
+
+  .homepage-categories{
+    grid-template-columns: 1fr;
+  }
     .search_box_container {
       max-width: 95%;
       height: 55px;

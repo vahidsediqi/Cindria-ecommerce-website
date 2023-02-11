@@ -1323,9 +1323,48 @@ background-color: rgba(255, 255, 255, 0.9);
   border-radius: 15px;
 }
 
-/* LOGIN */
+/* Homepage categories */
 
+.homepage-categories {
+  max-width: 85%;
+  margin: 55px auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 25px;
+}
 
+.home-category{
+  border-radius: 15px;
+  height: 350px;
+  display: flex;
+  align-items: end;
+  padding-left: 35px;
+  padding-bottom: 35px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.home-category span{
+ background-color: black;
+ opacity: 0.8;
+ padding: 15px;
+ border-radius: 15px;
+ color: white
+}
+
+.rel-category {
+  background-image: url('../img/product/realestate.jpg');
+
+}
+
+.automobile-category {
+  background-image: url('../img/product/auto.jpg');
+}
+
+.electronic-category {
+  background-image: url('../img/product/elec.jpg');
+}
 
 /* footer */
 footer{
@@ -1436,6 +1475,7 @@ footer{
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  margin-top: 10px;
 }
 
 .title-star h4 {
