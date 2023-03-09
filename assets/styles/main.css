@@ -446,15 +446,12 @@ background-color: rgba(255, 255, 255, 0.9);
 
 }
 
- 
-
-/* Featured products */
-
-.featured-products-container {
-  max-width: 70%;
-  margin: 95px auto;
+.swipper-wrapper {
+  max-width: 89% ;
+  margin: auto;
 }
 
+/* swipper ends */
 .feature-product{
   padding-top: 55px;
   display: flex;

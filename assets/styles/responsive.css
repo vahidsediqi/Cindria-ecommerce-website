@@ -1,7 +1,18 @@
 /* MOBILE */
 
 @media screen and (max-width: 992px) {
+.new-product-design-grid{
+  grid-template-columns: 1fr;
+}
 
+.swipper-wrapper {
+  max-width: 95% ;
+}
+
+.inner-product-new{
+  padding: 15px;
+    
+   }
   .homepage-categories{
     grid-template-columns: 1fr;
   }

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+.product-carousel {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: hidden;
+  margin: 0 auto;
+  width: 100%;
+  max-width: 800px;
+  padding: 20px 0;
+  position: relative;
+}
+
+.product-box {
+  flex: 0 0 calc(100% / 4);
+  text-align: center;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.product-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.product-title {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.product-price {
+  font-size: 14px;
+  color: #888;
+}
+
+.prev-button,
+.next-button {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 1;
+}
+
+.prev-button {
+  left: 20px;
+}
+
+.next-button {
+  right: 20px;
+}
+
+
+  </style>
+</head>
+<body>
+  <div class="product-carousel">
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-1.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 1</h2>
+        <p class="product-price">$19.99</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-2.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 2</h2>
+        <p class="product-price">$29.99</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-3.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 3</h2>
+        <p class="product-price">$39.99</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-4.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 4</h2>
+        <p class="product-price">$49.99</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-5.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 5</h2>
+        <p class="product-price">$59.99</p>
+      </div>
+    </div>
+    <div class="product-box">
+      <div class="product-image">
+        <img src="product-6.jpg" alt="Product Image">
+      </div>
+      <div class="product-details">
+        <h2 class="product-title">Product 6</h2>
+        <p class="product-price">$69.99</p>
+      </div>
+    </div>
+    <button class="prev-button">&lt;</button>
+    <button class="next-button">&gt;</button>
+  </div>
+  
+
+  
+<script>
+const carousel = document.querySelector(".product-carousel");
+const prevButton = carousel.querySelector(".prev-button");
+const nextButton = carousel.querySelector(".next-button");
+const products = carousel.querySelectorAll(".product-box");
+
+let position = 0;
+const productWidth = products[0].offsetWidth;
+const carouselWidth = carousel.offsetWidth;
+const numProducts = products.length;
+const numVisibleProducts = Math.floor(carouselWidth / productWidth);
+
+prevButton.addEventListener("click", () => {
+  if (position >= productWidth) {
+    position -= productWidth;
+    carousel.style.transform = `translateX(-${position}px)`;
+  }
+});
+
+nextButton.addEventListener("click", () => {
+  if (position <= (numProducts - numVisibleProducts) * productWidth) {
+    position += productWidth;
+    carousel.style.transform = `translateX(-${position}px)`;
+  }
+});
+
+
+
+</script>
+</body>
+</html>
